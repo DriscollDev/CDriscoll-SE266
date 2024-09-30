@@ -12,7 +12,8 @@
         'title' => 'Finish homework',
         'due' => 'today',
         'assigned_to' => 'John',
-        'completed' => false
+        'completed' => false,
+        'bool' => true
     ];
     $title = 'Task';
     ?>
@@ -29,6 +30,10 @@
         </li>
         <li>
             <strong>Status: </strong> <?php echo $task['completed'] ? 
+            '<span class="icon">&#9989;</span>' : '<span class="icon">&#10060;</span> '; ?>
+        </li>
+        <li>
+            <strong>Extra Boolean: </strong> <?php echo $task['bool'] ? 
             '<span class="icon">&#9989;</span>' : '<span class="icon">&#10060;</span> '; ?>
         </li>
     </ul>

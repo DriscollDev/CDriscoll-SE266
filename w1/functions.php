@@ -9,24 +9,50 @@
 <body>
     <?php
 
-    function dd($data) {
-        echo '<pre>';
-        die(var_dump($data));
-        echo '</pre>';
+    function ofAge($data) {
+        if ($data >= 21) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    $task = [
-        'title' => 'Finish homework',
-        'due' => 'today',
-        'assigned_to' => 'John',
-        'completed' => false
+    $person1 = [
+        'name' => 'John Doe',
+        'age' => 23
     ];
-    $title = 'Task';
+    $person2 = [
+        'name' => 'Jane Doe',
+        'age' => 20
+    ];
+    $title = 'People';
     ?>
     <h1><?php echo $title; ?></h1>
-    
-    <?php
-    dd($task);
-    ?>
+    <h2>Person 1</h2>
+    <ul>   
+        <li>
+            <strong>Name: </strong> <?php echo $person1['name']; ?>
+        </li>
+        <li>
+            <strong>Age: </strong> <?php echo $person1['age']; ?>
+        </li>
+        <li>
+            <strong>Can Drink: </strong> <?php echo ofAge($person1['age']) ? 
+            '<span class="icon">&#9989;</span>' : '<span class="icon">&#10060;</span> '; ?>
+        </li>
+    </ul>
+    <h2>Person 2</h2>
+    <ul>   
+        <li>
+            <strong>Name: </strong> <?php echo $person2['name']; ?>
+        </li>
+        <li>
+            <strong>Age: </strong> <?php echo $person2['age']; ?>
+        </li>
+        <li>
+            <strong>Can Drink: </strong> <?php echo ofAge($person2['age']) ? 
+            '<span class="icon">&#9989;</span>' : '<span class="icon">&#10060;</span> '; ?>
+        </li>
+
 </body>
 </html>
