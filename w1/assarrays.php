@@ -11,7 +11,7 @@
     $task = [
         'title' => 'Finish homework',
         'due' => 'today',
-        'assigned to' => 'John'
+        'assigned_to' => 'John'
     ];
     $title = 'Task';
     ?>
@@ -20,5 +20,6 @@
         <?php foreach ($task as $key => $value) { ?>
             <li><strong><?php echo ($key); ?></strong> <?php echo $value; ?> </li>    
         <?php } ?>
+    </ul>
 </body>
 </html>
