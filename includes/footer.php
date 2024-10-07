@@ -1,3 +1,4 @@
+<!-- Footer from class files -->
 <hr />          
     <?php       
         $file = basename($_SERVER['PHP_SELF']);

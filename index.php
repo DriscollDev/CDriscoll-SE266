@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="includes/cards.css">
 </head>
 <body>
+<!-- Navbar from class files, modified for main page because ref links are different -->
 <div class="navbar">
 
   <div class="dropdown">
