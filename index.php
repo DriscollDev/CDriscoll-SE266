@@ -38,27 +38,31 @@
         <div class="column">
             <div class="card">
                 <h3>PHP Resources</h3>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <a href="https://www.php.net/docs.php">PHP Docs</a>
+                <br>
+                <a href="https://www.w3schools.com/php/">W3 Schools</a>
+                <br>
+                <a href="https://www.killerphp.com/tutorials/object-oriented-php/">Killer PHP</a>
+                <p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
                 <h3>Git Resources</h3>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
+                    <a href="https://docs.github.com/en/get-started/getting-started-with-git">Github</a>
+                    <br>
+                    <a href="https://git-scm.com/">Official Git Site</a>
+                    <br>
+                    <a href="https://learngitbranching.js.org/">Git Branching</a>
+                    <p></p>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
                 <h3>Things I Like</h3>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
+                <p>Dungeons and Dragons <br> Magic the Gathering <br> Video Games</p>
             </div>
         </div>
 
