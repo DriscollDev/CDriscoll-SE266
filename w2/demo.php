@@ -1,7 +1,7 @@
 <?php 
 
 include '../includes/header.php'; 
-include '../functions.php';
+//include '../functions.php';
 
 $teamName = '';
 $wins = '';
