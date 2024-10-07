@@ -18,7 +18,6 @@
     <div class="dropdown-content" id="myDropdown">
       <a href="../w1/index.php">Assignment 1</a>
       <a href="../w2/index.php">Assignment 2</a>
-      <!--
       <a href="../w3/index.php">Assignment 3</a>
       <a href="../w4/index.php">Assignment 4</a>
       <a href="../w5/index.php">Assignment 5</a>
@@ -27,7 +26,6 @@
       <a href="../w8/index.php">Assignment 8</a>
       <a href="../w9/index.php">Assignment 9</a>
       <a href="../w10/index.php">Assignment 10</a> 
--->
     </div>
   </div> 
 
