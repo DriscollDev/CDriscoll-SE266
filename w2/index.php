@@ -96,9 +96,6 @@ if (isset($_POST['patient_submit'])){
     }
 
 }
-
-
-
 ?>
 <style>
     .hide{
@@ -133,7 +130,7 @@ if (isset($_POST['patient_submit'])){
 
         <div class="form-control">
             <label for="height">Height:</label><br />
-            <input type="number" name="feet" value="<?= $feet; ?>" min="2" max="9"> feet
+            <input type="number" name="feet" value="<?= $feet; ?>" min="0" max="9"> feet
             <input type="number" name="inches" value="<?= $inches; ?>" min="0" max="11"> inches
         </div>
 
@@ -152,7 +149,9 @@ if (isset($_POST['patient_submit'])){
 
 <div>
 <p style="color: red;"><?= $error; ?></p>
-<div id="confirm" class="<?= empty($error) ? '' : 'hide' ?>">
+
+
+<div id="confirm" class="<?= empty($error) & isset($_POST['patient_submit']) ? '' : 'hide' ?>">
     <h2>Form Results</h2>
     <p>Name: <?= $firstName . ' ' . $lastName ?></p>
     <p>Married: <?=  $married ? 
