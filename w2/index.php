@@ -76,7 +76,7 @@ if (isset($_POST['patient_submit'])){
     if(empty($error)){
         $age = date_diff(date_create($birthDate), date_create('now'))->y;
         $kgs = $weight * 0.453592;
-        $meters = ($feet * 12 + $inch) * 0.0254;
+        $meters = ($feet * 12 + $inches) * 0.0254;
         $bmi = $kgs / ($meters * $meters);
         if($bmi < 18.5){
             $bmiClassification = 'Underweight';
@@ -134,7 +134,7 @@ if (isset($_POST['patient_submit'])){
         <div class="form-control">
             <label for="height">Height:</label><br />
             <input type="number" name="feet" value="<?= $feet; ?>" min="2" max="9"> feet
-            <input type="number" name="inches" value="<?= $inches; ?>" min="0" max="12"> inches
+            <input type="number" name="inches" value="<?= $inches; ?>" min="0" max="11"> inches
         </div>
 
         <div class="form-control">
