@@ -40,7 +40,7 @@ if (isset($_POST['patient_submit'])){
         display: none;
     }
 </style>
-<a href="./index.php"></a>
+<a href="./index.php">Go back to view</a>
 <h1>Patient Intake Form</h1>
 <div class="form-wrapper">
 
