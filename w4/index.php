@@ -1,3 +1,6 @@
-<?php include("../includes/header.php"); ?>
-<h1>Placeholder</h1>
+<?php   include("../includes/header.php");
+        include("./viewPatients.php")
+?>
+
+
 <?php include("../includes/footer.php"); ?>
