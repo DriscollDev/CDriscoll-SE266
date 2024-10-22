@@ -29,7 +29,7 @@ if (isset($_POST['patient_submit'])){
     $birthDate = filter_input(INPUT_POST, 'birthDate');
     if($error == ''){
         $results = addPatient($firstName, $lastName, $married ? 1 : 0 , $birthDate);
-        header('Location: ./viewPatients.php');
+        header('Location: .index.php');
     }
 }
 
@@ -40,6 +40,7 @@ if (isset($_POST['patient_submit'])){
         display: none;
     }
 </style>
+<a href="./index.php"></a>
 <h1>Patient Intake Form</h1>
 <div class="form-wrapper">
 
@@ -77,21 +78,4 @@ if (isset($_POST['patient_submit'])){
 <div>
 <p style="color: red;"><?= $error; ?></p>
 
-
-<div id="confirm" class="<?= empty($error) & isset($_POST['patient_submit']) ? '' : 'hide' ?>">
-
-    <h2>Form Results</h2>
-    <p>Name: <?= $firstName . ' ' . $lastName ?></p>
-    <p>Married: <?=  $married ? 
-                'True' : 'False'; ?></p>
-    <p>Birth Date: <?= date_format(date_create($birthDate),'m-d-Y'); ?></p>
-
-    <form name="patientConfirm" method="post">
-
-        <div class="form-submit">
-            <input type="submit" name="patient_confirm" value="confirm">
-        </div>
-
-    </form>
-</div>
 <?php include "../includes/footer.php" ?>
