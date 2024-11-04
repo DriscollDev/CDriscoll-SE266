@@ -1,4 +1,5 @@
 <?php include("../includes/header.php"); 
-include("./viewPatients.php")?>
+    include("./viewPatients.php")
+    ?>
 
 <?php include("../includes/footer.php"); ?>

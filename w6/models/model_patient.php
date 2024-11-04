@@ -59,6 +59,32 @@
         }
         return false;
     }
+
+    function searchPatients($firstName, $lastName, $married){
+        global $db;
+        $results = [];
+        $sql = 'SELECT id, patientFirstName, patientLastName, patientMarried, patientBirthDate FROM patients WHERE 0=0 ';
+        $binds = [];
+        if($firstName != ''){
+            $sql .= ' AND patientFirstName LIKE :firstName';
+            $binds[':firstName'] = '%'.$firstName.'%';
+        }
+        if($lastName != ''){
+            $sql .= ' AND patientLastName LIKE :lastName';
+            $binds[':lastName'] = '%'.$lastName.'%';
+        }
+        if($married != ''){
+            $sql .= ' AND patientMarried = :married';
+            $binds[':married'] = $married;
+        }
+        $stmt = $db->prepare($sql);
+        if($stmt->execute($binds) && $stmt->rowCount() > 0){
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
+        return $results;
+       
+    }
+
     //$patients = getAllPatients();
     //var_dump($patients);
 ?>
