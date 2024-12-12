@@ -23,10 +23,7 @@
       <a href="w4/index.php">Assignment 4</a>
       <a href="w5/index.php">Assignment 5</a>
       <a href="w6/index.php">Assignment 6</a>
-      <a href="w7/index.php">Assignment 7</a>
-      <a href="w8/index.php">Assignment 8</a>
-      <a href="w9/index.php">Assignment 9</a>
-      <a href="w10/index.php">Assignment 10</a>
+      <a href="w10-final/index.php">Final Project</a>
     </div>
   </div> 
 

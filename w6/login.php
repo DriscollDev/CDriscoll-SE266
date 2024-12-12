@@ -4,7 +4,7 @@
      1: doug    : password
      2: conor   : pass
     */
-    include '../includes/header.php';
+    include 'includes/header.php';
     include 'models/model_users.php';
 
     session_start();
@@ -18,7 +18,7 @@
         $password = filter_input(INPUT_POST,'password', FILTER_SANITIZE_STRING);
     
         if(login($username, $password)){
-            $_SESSION['isLogginIn'] = true;
+            $_SESSION['isLoggIn'] = true;
             $_SESSION['username'] = $username;
             header('Location: index.php');
         }
